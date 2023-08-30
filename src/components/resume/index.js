@@ -7,7 +7,7 @@ const Resume = () => {
   return (
     <div id="resume" className="resumepage">
       <div>
-        <h1 style={{ paddingLeft: '52px', paddingTop: '1px' }}>Resume</h1>
+        <h1 style={{ paddingLeft: '52px', paddingTop: '11px' }}>Resume</h1>
       </div>
       <div style={{ display: 'flex' }}>
         <div style={{ paddingLeft: '52px' }}>
@@ -21,26 +21,46 @@ const Resume = () => {
       </div>
       <div className="resumeInfo">
         <div className="education">
-          <span style={{ color: 'gray', fontSize: '10px' }}>2020-2021</span><br />
-          <span style={{ fontSize: '14px' }}><b>Software Development</b> </span><br />
-          <span style={{ fontSize: '12px' }}><b>Moringa School</b></span>
+          <span style={{ color: 'gray', fontSize: '10px' }}>2017-2021</span><br />
+          <span style={{ fontSize: '14px' }}><b>BSIT</b> </span><br />
+          <a
+            style={{ fontSize: '12px', textDecoration: 'none' }}
+            href="https://pucit.edu.pk/"
+            target="_blank"
+            rel="noreferrer"
+          ><b>Punjab University(PUCIT)</b></a>
         </div>
         <div className="experiance">
-          <span className="tech-mentor">2022 - Present</span><br />
-          <span style={{ fontSize: '14px', paddingTop: '30px' }}><b>Technical Mentor</b> </span><br />
-          <span className="font-size"><b>Moringa School</b></span>
+          <span className="tech-mentor">2021 - Present</span><br />
+          <span style={{ fontSize: '14px', paddingTop: '30px' }}><b>MERN Stack</b> </span><br />
+          <a
+            style={{ fontSize: '12px', textDecoration: 'none' }}
+            href="https://qbatch.com/"
+            target="_blank"
+            rel="noreferrer"
+          ><b>Qbatch Lahore</b></a>
         </div>
       </div>
       <div className="resumeInfo">
         <div className="education">
-          <span style={{ color: 'gray', fontSize: '10px' }}>2012-2016</span><br />
-          <span style={{ fontSize: '14px' }}><b>Disaster Management</b> </span><br />
-          <span className="font-size"><b>Masinde Muliro Universiity </b></span>
+          <span style={{ color: 'gray', fontSize: '10px' }}>2015-2017</span><br />
+          <span style={{ fontSize: '14px' }}><b>ICS (Computer Science)</b> </span><br />
+          <a
+            style={{ fontSize: '12px', textDecoration: 'none' }}
+            href="https://gcu.edu.pk/"
+            target="_blank"
+            rel="noreferrer"
+          ><b>GCU Lahore</b></a>
         </div>
         <div className="experiance">
-          <span className="tech-mentor">2021-2022</span><br />
+          <span className="tech-mentor">2020-2021</span><br />
           <span style={{ fontSize: '14px', paddingTop: '30px' }}><b>Website Development </b> </span><br />
-          <span className="font-size"><b>Village 2 Nation</b></span>
+          <a
+            style={{ fontSize: '12px', textDecoration: 'none' }}
+            href="https://pucit.edu.pk/"
+            target="_blank"
+            rel="noreferrer"
+          ><b>Punjab University</b></a>
         </div>
       </div>
       <div style={{ display: 'flex', justifyContent: 'space-between', width: '90%' }}>
@@ -58,7 +78,7 @@ const Resume = () => {
           <div className="Skills">
             <div className="skill">CSS 3</div>
             <div className="skill"> Tailwind CSS </div>
-            <div className="skill"> Figma </div>
+            <div className="skill"> </div>
           </div>
           <br />
           <div className="Skills">
@@ -68,7 +88,7 @@ const Resume = () => {
           </div>
           <br />
           <div className="Skills">
-            <div className="skill"> Angular </div>
+            <div className="skill"> MongoDB </div>
             <div className="skill"> Android </div>
             <div className="skill"> Git </div>
           </div>

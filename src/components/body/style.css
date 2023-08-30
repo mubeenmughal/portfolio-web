@@ -98,7 +98,7 @@
 }
 
 .navbar {
-  width: 28%;
+  width: 25%;
   display: flex;
   justify-content: space-between;
   border: 0.5px solid #99646430;
@@ -150,6 +150,7 @@
   margin-top: -8px;
   border: 0px solid;
   border-radius: 12px;
+  padding-bottom: 40px
 }
 
 .Skills {

@@ -23,20 +23,20 @@ const NavBar = () => {
         <div className="navbar">
           <img id="colorfulhomeicon"
             onClick={() => setSelectedTab('home')}
-            width="50px" src={selectedTab === 'home' ? home : whiteHomeImg}
+            width="60px" src={selectedTab === 'home' ? home : whiteHomeImg}
             alt="home" />
           <img
             id="colorfulresumeicon"
             onClick={() => setSelectedTab('resume')}
-            width="50px" src={selectedTab === 'resume' ? resumeColorFull : resume}
+            width="60px" src={selectedTab === 'resume' ? resumeColorFull : resume}
             alt="resume" />
           <img id="colorfulworkicon"
             onClick={() => setSelectedTab('work')}
-            width="50px" src={selectedTab === 'work' ? workColorFull : work}
+            width="60px" src={selectedTab === 'work' ? workColorFull : work}
             alt="work" />
           <img id="colorfulcontacticon"
             onClick={() => setSelectedTab('contact')}
-            width="50px"
+            width="60px"
             src={selectedTab === 'contact' ? contactColorFull : contact}
             alt="contact" />
         </div>
