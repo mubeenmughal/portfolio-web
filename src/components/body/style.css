@@ -86,7 +86,7 @@
 .homeicons {
   display: flex;
   justify-content: end;
-  margin-right: 75px;
+  padding-right: 10%;
 }
 
 .profileImage {
@@ -147,7 +147,7 @@
   width: 90%;
   background-color: white;
   margin-left: 44px;
-  margin-top: -8px;
+  margin-top: 12px;
   border: 0px solid;
   border-radius: 12px;
   padding-bottom: 40px
@@ -169,30 +169,45 @@
   width: 90%;
   background-color: white;
   margin-left: 44px;
-  margin-top: -8px;
+  margin-top: 12px;
   border: 0px solid;
   border-radius: 12px;
 }
 
 .development {
-  width: 55%;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  margin-left: 344px;
+  justify-content: end;
+  padding: 0 16px;
+  grid-gap: 24px;
+  margin-bottom: 16px;
+}
 
+.projects-details {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  grid-gap: 20px;
+  flex-wrap: wrap;
+  padding: 16px;
+  overflow: auto;
+  margin-left: 5%;
+  cursor: pointer;
+}
 
+.projects-items {
+  padding: 10px;
+  background: bisque;
+  border-radius: 10px;
+  min-width: 43%;
+  /* display: flex; */
+  flex-direction: column;
 }
 
 .work {
-  width: 39%;
-  height: 35%;
   background-color: bisque;
   border: 0px solid;
   border-radius: 5px;
-  margin-left: 80px;
-  margin-top: 20px;
-
-
 }
 
 .Contact {
@@ -201,7 +216,7 @@
   margin-left: 44px;
   border: 0px solid;
   border-radius: 12px;
-  margin-top: -8px;
+  margin-top: 12px;
 }
 
 .phone {
@@ -249,20 +264,18 @@
   font-size: 12px;
 }
 
-.color-gray {
-  color: grey;
-}
-
 .d-flex {
   display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
 }
 
 .rec-img {
-  padding-left:7px;
+  padding-left: 7px;
   padding-top: 4px;
 }
 
-.project-info-basic{
+.project-info-basic {
   font-size: 8px;
   color: gray;
   padding-left: 5px;
@@ -284,13 +297,4 @@
 
 .padding-left {
   padding-left: 30px;
-}
-
-.submit-btn {
-  background-color: #F8FBFB;
-  border: 1px solid orangered;
-  font-size: 10px;
-  border-radius: 10px;
-  margin-left: 30px;
-  padding: 5px 16px 5px 16px;
 }

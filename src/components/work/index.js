@@ -1,53 +1,76 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-import Rectangle1 from '../../utils/images/Rectangle 20.png'
-import Rectangle2 from '../../utils/images/Rectangle 22.png'
-import Rectangle3 from '../../utils/images/Rectangle 24.png'
-import Rectangle4 from '../../utils/images/Rectangle 21.png'
-import rental from '../../utils/images/rental.png'
+import CustomModal from "../modal";
+
+import { workHistory } from "../../utils/constants";
 
 const Work = () => {
-  return (
-    <div id="portfolio" className="portfolio">
-      <h1 style={{ paddingLeft: '75px', paddingTop: '28px' }}><b>Portfolio</b></h1>
-      <div className="development">
-        <span style={{ color: 'orangered' }}>All</span>
-        <span className="color-gray">App Development</span>
-        <span className="color-gray">Web Development</span>
-        <span className="color-gray">Design</span>
-        <span className="color-gray">Mentorship</span>
-      </div>
-      <div className="d-flex">
-        <div className="work">
-          <img className="rec-img" src={Rectangle1} alt="rectangle" />
-          <span className="project-info-basic">App Development</span><br />
-          <span className="project-title"><b>Smart Bank App</b></span>
-        </div>
-        <div style={{ marginLeft: '30px', backgroundColor: '#FFEED9' }} className="work">
-          <img className="rec-img" src={Rectangle2} alt="rectangle" />
-          <span className="project-info-basic">Blog</span><br />
-          <span className="project-title"><b>NEXT.js</b></span>
-        </div>
-      </div>
+  const [projects, setProjects] = useState(workHistory)
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [projectInfo, setProjectInfo] = useState({});
+  const [active, setActive] = useState('All');
 
-      <div className="d-flex">
-        <div className="work" style={{ backgroundColor: '#FFEED9', marginTop: '-10px' }}>
-          <img className="rec-img" src={rental} alt="rental" />
-          <span className="project-info-basic">UI/UX</span><br />
-          <span className="project-title"><b>Renta</b></span>
+  const handleTabChange = (value) => {
+    setActive(value);
+    if (value === 'All') setProjects(workHistory);
+    else {
+      const newWorkHistory = workHistory?.filter(({ type }) => type.includes(value));
+      setProjects(newWorkHistory);
+    }
+  }
+
+  return (
+    <>
+      <CustomModal
+        isModalOpen={isModalOpen}
+        setIsModalOpen={setIsModalOpen}
+        projectInfo={projectInfo}
+        setProjectInfo={setProjectInfo}
+      />
+      <div id="portfolio" className="portfolio">
+        <h1 style={{ paddingLeft: '75px', paddingTop: '28px' }}><b>Portfolio</b></h1>
+        <div className="development">
+          <div onClick={() => handleTabChange('All')}>
+            <span style={{ color: active === 'All' ? 'orangered' : 'grey', cursor: 'pointer' }}>All</span>
+          </div>
+          <div onClick={() => handleTabChange('App')}>
+            <span style={{ color: active === 'App' ? 'orangered' : 'grey', cursor: 'pointer' }}>App Development</span>
+          </div>
+          <div onClick={() => handleTabChange('Web')}>
+            <span style={{ color: active === 'Web' ? 'orangered' : 'grey', cursor: 'pointer' }}>Web Development</span>
+          </div>
         </div>
-        <div style={{ marginLeft: '30px' }} className="work">
-          <img className="rec-img" src={Rectangle3} alt="rectangle" />
-          <span style={{ fontSize: '7px', color: 'gray', paddingLeft: '5px' }}>Mentorship</span><br />
-          <span className="project-title"><b>Tech Mentor</b></span>
+        <div className="projects-details">
+          {
+            projects?.map(({
+              title,
+              type,
+              src,
+              description,
+              role
+            }, i) => {
+              return <div
+                key={i}
+                className="projects-items"
+                style={type === 'App Development' ? { backgroundColor: '#FFEED9' } : {}}
+                onClick={() => {
+                  setProjectInfo({
+                    title,
+                    description,
+                    role
+                  })
+                  setIsModalOpen(true);
+                }}
+              >
+                <img className="rec-img" height={100} width={310} src={src} alt="rectangle" />
+                <span className="project-info-basic">{type}</span><br />
+                <span className="project-title"><b>{title}</b></span>
+              </div>
+            })
+          }
         </div>
       </div>
-      <div className="work" style={{ backgroundColor: '#FFEED9', marginTop: ' -30px' }}>
-        <img className="rec-img" src={Rectangle4}alt="rectangle" />
-        <span className="project-info-basic">Web Development</span><br />
-        <span className="project-title"><b>IdeaFlow</b></span>
-      </div>
-    </div>
+    </>
   )
 }
 

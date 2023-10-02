@@ -1,6 +1,6 @@
 import React from "react";
 
-import profile from '../../utils/images/profile picture.png';
+import profile from '../../utils/images/profile.jpeg';
 import facebook from '../../utils/images/Facebook.png';
 import details from '../../utils/images/career details.png';
 import LinkedIn from '../../utils/images//Linkedin.png';
@@ -11,6 +11,8 @@ import location from '../../utils/images/Location (1).png';
 import email from '../../utils/images/Email.png';
 import download from '../../utils/images/Download Details.png';
 import Resume from '../../utils/CV - Afaq Khan - 23-WI.pdf';
+
+import './style.css';
 
 const ContactInfo = () => {
 
@@ -73,7 +75,7 @@ const ContactInfo = () => {
           <hr />
           <div style={{ display: 'flex' }}>
             <img width=" 30px" src={email} alt="email" />
-            <div>
+            <div className="contact-email">
               <span style={{ paddingTop: '7px', fontSize: '15px', color: 'silver' }}>Email</span><br />
               <span style={{ fontSize: '14px' }}>afaqahmadkhan499@gmail.com</span>
             </div>
@@ -88,8 +90,8 @@ const ContactInfo = () => {
           </div>
           <hr />
           <img
-            width="170px"
-            height="35px"
+            width="160px"
+            height="45px"
             className="cursor-pointer"
             style={{ paddingBottom: '10px' }}
             src={download} alt="download"

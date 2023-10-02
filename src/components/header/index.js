@@ -8,8 +8,9 @@ import './style.css';
 const Header = () => {
   return (
     <div className="header">
-      <img src={beatriceWambui} alt="beauty" />
-      <img src={moon} alt="moon" />
+      {/* <img src={beatriceWambui} alt="beauty" /> */}
+      <h3>AF</h3>
+      {/* <img src={moon} alt="moon" /> */}
     </div>
   )
 }
