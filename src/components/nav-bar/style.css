@@ -1,0 +1,15 @@
+.navWidth {
+    width: 80%;
+}
+
+@media screen and (max-width: 578px) {
+    .navWidth {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .navWidth {
+        width: 100%;
+    }
+}

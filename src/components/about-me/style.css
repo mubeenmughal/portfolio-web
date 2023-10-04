@@ -1,4 +1,57 @@
 .backend-dev {
-    padding-left: 16px;
-    opacity: 0.7;
+  padding-left: 16px;
+  opacity: 0.7;
+}
+
+.what-I-Do {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0 6% 0px 0;
+  gap: 2%;
+}
+
+.app-dev {
+  width: 50%;
+  background-color: rgb(232, 243, 248);
+  border: 0px solid;
+  border-radius: 10px;
+  margin-bottom: 21px;
+}
+
+.app-dev-text {
+  width: 50%;
+  background-color: bisque;
+  margin-bottom: 21px;
+  border: 0px solid;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .what-I-Do {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 6% 0px 0;
+    flex-wrap: wrap;
+  }
+  .app-dev {
+    width: 100%;
+    background-color: rgb(232, 243, 248);
+    border: 0px solid;
+    border-radius: 10px;
+    margin-bottom: 21px;
+  }
+  
+  .app-dev-text {
+    width: 100%;
+    background-color: bisque;
+    margin-bottom: 21px;
+    border: 0px solid;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  
 }

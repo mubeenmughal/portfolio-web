@@ -3,6 +3,8 @@ import React from "react";
 import group from '../../utils/images/Group.png';
 import humbleicons from '../../utils/images/humbleicons_briefcase.png';
 
+import './style.css';
+
 const Resume = () => {
   return (
     <div id="resume" className="resumepage">
@@ -10,17 +12,61 @@ const Resume = () => {
         <h1 style={{ paddingLeft: '52px', paddingTop: '11px' }}>Resume</h1>
       </div>
       <div style={{ display: 'flex' }}>
-        <div style={{ paddingLeft: '52px' }}>
-          <img src={group} alt="group" />  &nbsp;
-          <span style={{ fontSize: '25px' }}><b>Education</b></span>
+        <div className="educationCol">
+          <div style={{ paddingLeft: '52px' }}>
+            <img src={group} alt="group" />  &nbsp;
+            <span style={{ fontSize: '25px' }}><b>Education</b></span>
+          </div>
+          <div className="education">
+            <span style={{ color: 'gray', fontSize: '10px' }}>2017-2021</span><br />
+            <span style={{ fontSize: '14px' }}><b>BSIT</b> </span><br />
+            <a
+              style={{ fontSize: '12px', textDecoration: 'none' }}
+              href="https://pucit.edu.pk/"
+              target="_blank"
+              rel="noreferrer"
+            ><b>Punjab University(PUCIT)</b></a>
+          </div>
+          <div className="education">
+            <span style={{ color: 'gray', fontSize: '10px' }}>2015-2017</span><br />
+            <span style={{ fontSize: '14px' }}><b>ICS (Computer Science)</b> </span><br />
+            <a
+              style={{ fontSize: '12px', textDecoration: 'none' }}
+              href="https://gcu.edu.pk/"
+              target="_blank"
+              rel="noreferrer"
+            ><b>GCU Lahore</b></a>
+          </div>
         </div>
-        <div style={{ paddingLeft: '42%' }}>
-          <img src={humbleicons} alt="humbleIcon" /> &nbsp;
-          <span style={{ fontSize: '25px' }}><b>Experience</b></span>
+        <div className="educationCol">
+          <div style={{ paddingLeft: '42%' }}>
+            <img src={humbleicons} alt="humbleIcon" /> &nbsp;
+            <span style={{ fontSize: '25px' }}><b>Experience</b></span>
+          </div>
+          <div className="experiance">
+            <span className="tech-mentor">2021 - Present</span><br />
+            <span style={{ fontSize: '14px', paddingTop: '30px' }}><b>MERN Stack</b> </span><br />
+            <a
+              style={{ fontSize: '12px', textDecoration: 'none' }}
+              href="https://qbatch.com/"
+              target="_blank"
+              rel="noreferrer"
+            ><b>Qbatch Lahore</b></a>
+          </div>
+          <div className="experiance">
+            <span className="tech-mentor">2020-2021</span><br />
+            <span style={{ fontSize: '14px', paddingTop: '30px' }}><b>Website Development </b> </span><br />
+            <a
+              style={{ fontSize: '12px', textDecoration: 'none' }}
+              href="https://pucit.edu.pk/"
+              target="_blank"
+              rel="noreferrer"
+            ><b>Punjab University</b></a>
+          </div>
         </div>
       </div>
-      <div className="resumeInfo">
-        <div className="education">
+      {/* <div className="resumeInfo"> */}
+      {/* <div className="education">
           <span style={{ color: 'gray', fontSize: '10px' }}>2017-2021</span><br />
           <span style={{ fontSize: '14px' }}><b>BSIT</b> </span><br />
           <a
@@ -29,8 +75,8 @@ const Resume = () => {
             target="_blank"
             rel="noreferrer"
           ><b>Punjab University(PUCIT)</b></a>
-        </div>
-        <div className="experiance">
+        </div> */}
+      {/* <div className="experiance">
           <span className="tech-mentor">2021 - Present</span><br />
           <span style={{ fontSize: '14px', paddingTop: '30px' }}><b>MERN Stack</b> </span><br />
           <a
@@ -39,10 +85,10 @@ const Resume = () => {
             target="_blank"
             rel="noreferrer"
           ><b>Qbatch Lahore</b></a>
-        </div>
-      </div>
-      <div className="resumeInfo">
-        <div className="education">
+        </div> */}
+      {/* </div> */}
+      {/* <div className="resumeInfo"> */}
+      {/* <div className="education">
           <span style={{ color: 'gray', fontSize: '10px' }}>2015-2017</span><br />
           <span style={{ fontSize: '14px' }}><b>ICS (Computer Science)</b> </span><br />
           <a
@@ -51,8 +97,8 @@ const Resume = () => {
             target="_blank"
             rel="noreferrer"
           ><b>GCU Lahore</b></a>
-        </div>
-        <div className="experiance">
+        </div> */}
+      {/* <div className="experiance">
           <span className="tech-mentor">2020-2021</span><br />
           <span style={{ fontSize: '14px', paddingTop: '30px' }}><b>Website Development </b> </span><br />
           <a
@@ -62,7 +108,7 @@ const Resume = () => {
             rel="noreferrer"
           ><b>Punjab University</b></a>
         </div>
-      </div>
+      </div> */}
       <div style={{ display: 'flex', justifyContent: 'space-between', width: '90%' }}>
         <h2 style={{ paddingLeft: '60px' }}><b>Work Skills</b></h2>
         <h2 style={{ paddingRight: '265px' }}><b>Soft Skills</b></h2>

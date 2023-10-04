@@ -29,3 +29,25 @@
   margin-top: 16px;
   cursor: pointer;
 }
+
+.parentContactDiv {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width: 578px) {
+  .parentContactDiv {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .parentContactDiv {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+}

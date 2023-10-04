@@ -9,7 +9,7 @@ import './style.css'
 const AboutMe = () => {
   return (
     <div id="aboutme" className="aboutme">
-      <div style={{ paddingLeft: '52px', 'paddingTop': '1px' }}>
+      <div style={{ padding: '5px 34px 10px 52px' }}>
         <h1 style={{ fontSize: '30px' }}>About Me</h1>
         <p style={{ paddingLeft: 'px', fontSize: '20px', opacity: '0.6' }}>
           Hello there! I'm thrilled to welcome you to my portfolio. I am a passionate and versatile<br />
@@ -18,8 +18,8 @@ const AboutMe = () => {
           I constantly strive to enhance my skills and embrace emerging trends in the industry.
         </p>
         <h2>What I do!</h2>
-        <div style={{ display: 'flex', justifyContent: 'space-between', width: '92%' }}>
-          <div style={{ width: '47%', height: '35%', backgroundColor: 'bisque', border: '0px solid', borderRadius: '10px' }}>
+        <div className="what-I-Do">
+          <div className="app-dev-text">
             <img style={{ paddingTop: '8px', paddingLeft: '15px' }} src={code} alt="code" />
             <span style={{ fontSize: '23px', paddingLeft: '8px' }}><b>Web Development</b></span><br />
             <p className="project-info">
@@ -44,8 +44,8 @@ const AboutMe = () => {
             </p>
           </div>
         </div>
-        <div style={{ display: 'flex', justifyContent: 'space-between', paddingBottom: '15px', width: '92%' }}>
-          <div className="ui-dev">
+        <div className="what-I-Do" style={{ marginBottom: '20px' }}>
+          <div className="app-dev">
             <img className="app-dev-img" src={App} alt="app" />
             <span className="dev-text"><b>Backend Development</b></span><br />
             <p className="backend-dev">

@@ -14,23 +14,27 @@ import workColorFull from '../../utils/images/work colorful.png';
 import resumeColorFull from '../../utils/images/Resume colorfui.png';
 import contactColorFull from '../../utils/images/contact colorful.png';
 
+import "./style.css";
 
 const NavBar = () => {
   const [selectedTab, setSelectedTab] = useState('home');
   return (
-    <div style={{ width: '80%' }}>
+    <div className="navWidth">
       <div className="homeicons">
         <div className="navbar">
           <img id="colorfulhomeicon"
+          style={{ marginRight: '10px' }}
             onClick={() => setSelectedTab('home')}
             width="60px" src={selectedTab === 'home' ? home : whiteHomeImg}
             alt="home" />
           <img
+            style={{ marginRight: '10px' }}
             id="colorfulresumeicon"
             onClick={() => setSelectedTab('resume')}
             width="60px" src={selectedTab === 'resume' ? resumeColorFull : resume}
             alt="resume" />
           <img id="colorfulworkicon"
+            style={{ marginRight: '10px' }}
             onClick={() => setSelectedTab('work')}
             width="60px" src={selectedTab === 'work' ? workColorFull : work}
             alt="work" />

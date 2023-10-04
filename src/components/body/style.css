@@ -1,6 +1,7 @@
 .parentDiv {
   display: flex;
   margin-top: 30px;
+  gap: 40px;
 }
 
 .contact {
@@ -47,23 +48,6 @@
   opacity: 0.7;
 }
 
-.app-dev {
-  width: 47%;
-  height: 35%;
-  background-color: rgb(232, 243, 248);
-  border: 0px solid;
-  border-radius: 10px;
-}
-
-.ui-dev {
-  width: 47%;
-  height: 35%;
-  background-color: rgb(232, 243, 248);
-  margin-top: 21px;
-  border: 0px solid;
-  border-radius: 10px;
-}
-
 .app-dev-img {
   padding-top: 8px;
   padding-left: 15px;
@@ -74,19 +58,11 @@
   padding-left: 8px;
 }
 
-.app-dev-text {
-  width: 47%;
-  height: 35%;
-  background-color: bisque;
-  margin-top: 21px;
-  border: 0px solid;
-  border-radius: 10px;
-}
-
 .homeicons {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   padding-right: 10%;
+  margin-top: -5px;
 }
 
 .profileImage {
@@ -98,33 +74,10 @@
 }
 
 .navbar {
-  width: 25%;
-  display: flex;
-  justify-content: space-between;
   border: 0.5px solid #99646430;
   padding: 13px;
   border-radius: 22px;
-}
-
-.education {
-  background-color: bisque;
-  width: 30%;
-  border: 0px solid;
-  border-radius: 5px;
-  padding-left: 15px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  margin-left: 54px;
-}
-
-.experiance {
-  background-color: #FFEED9;
-  width: 30%;
-  border: 0px solid;
-  border-radius: 5px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 15px;
+  margin-bottom: 10px;
 }
 
 .resumeInfo {
@@ -137,8 +90,6 @@
 .aboutme {
   width: 90%;
   background-color: white;
-  margin-left: 44px;
-  margin-top: 12px;
   border: 0px solid;
   border-radius: 12px;
 }
@@ -146,8 +97,6 @@
 .resumepage {
   width: 90%;
   background-color: white;
-  margin-left: 44px;
-  margin-top: 12px;
   border: 0px solid;
   border-radius: 12px;
   padding-bottom: 40px
@@ -168,8 +117,6 @@
 .portfolio {
   width: 90%;
   background-color: white;
-  margin-left: 44px;
-  margin-top: 12px;
   border: 0px solid;
   border-radius: 12px;
 }
@@ -213,10 +160,8 @@
 .Contact {
   width: 90%;
   background-color: white;
-  margin-left: 44px;
   border: 0px solid;
   border-radius: 12px;
-  margin-top: 12px;
 }
 
 .phone {
@@ -297,4 +242,75 @@
 
 .padding-left {
   padding-left: 30px;
+}
+
+@media screen and (max-width:767px) {
+  .parentDiv {
+    flex-wrap: wrap;
+  }
+
+  .contact {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .personel {
+    margin: 0 auto;
+  }
+
+  .aboutme {
+    width: 100%;
+    background-color: white;
+    border: 0px solid;
+    border-radius: 12px;
+    margin-left: 0;
+  }
+
+  .homeicons {
+    display: flex;
+    justify-content: flex-end;
+    /* padding-right: 10%; */
+    margin-top: 20px;
+  }
+
+  .navbar {
+    border: 0.5px solid #99646430;
+    border-radius: 22px;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width:578px) {
+  .email {
+    background-color: rgb(232, 243, 248);
+    margin-left: 0;
+    padding-top: 25px;
+    padding-left: 15px;
+    border: 0px solid;
+    border-radius: 12px;
+    padding-bottom: 35px;
+    width: 100%;
+  }
+
+  .aboutme {
+    width: 100%;
+    background-color: white;
+    border: 0px solid;
+    border-radius: 12px;
+    margin-left: 0;
+  }
+
+  .homeicons {
+    display: flex;
+    justify-content: flex-end;
+    /* padding-right: 10%; */
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .navbar {
+    border: 0.5px solid #99646430;
+    border-radius: 22px;
+    margin-bottom: 10px;
+  }
 }
