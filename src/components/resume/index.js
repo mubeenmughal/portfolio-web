@@ -11,9 +11,9 @@ const Resume = () => {
       <div>
         <h1 style={{ paddingLeft: '52px', paddingTop: '11px' }}>Resume</h1>
       </div>
-      <div style={{ display: 'flex' }}>
+      <div style={{ display: 'flex', flexWrap: 'wrap' }}>
         <div className="educationCol">
-          <div style={{ paddingLeft: '52px' }}>
+          <div>
             <img src={group} alt="group" />  &nbsp;
             <span style={{ fontSize: '25px' }}><b>Education</b></span>
           </div>
@@ -39,7 +39,7 @@ const Resume = () => {
           </div>
         </div>
         <div className="educationCol">
-          <div style={{ paddingLeft: '42%' }}>
+          <div>
             <img src={humbleicons} alt="humbleIcon" /> &nbsp;
             <span style={{ fontSize: '25px' }}><b>Experience</b></span>
           </div>
