@@ -1,5 +1,10 @@
 .contact-email {
-    width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.downloadResume {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }

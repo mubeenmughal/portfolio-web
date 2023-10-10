@@ -25,12 +25,11 @@ const Contact = () => {
     <Spin spinning={loading}>
       <div id="contact" className="Contact">
         <h1 className="contact-phone"><b>Contact </b></h1>
-        <div style={{ display: 'flex' }}>
+        <div className="parentContact">
           <div className="phone">
             <img src={mobile} alt="mobile" />
             <span className="phone-email"><b>Phone:</b></span><br />
             <span className="phone-number">+923030949729</span><br />
-            {/* <span className="phone-number">+254738509151</span> */}
           </div>
           <div className="email">
             <img src={email} alt="email" />

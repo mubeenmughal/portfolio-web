@@ -36,12 +36,44 @@
   flex-wrap: wrap;
 }
 
-@media screen and (max-width: 578px) {
-  .parentContactDiv {
-    display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
+.email {
+  width: 50%;
+  background-color: rgb(232, 243, 248);
+  padding-top: 25px;
+  padding-left: 15px;
+  border: 0px solid;
+  border-radius: 12px;
+  padding-bottom: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.phone {
+  width: 50%;
+  height: 15%;
+  background-color: bisque;
+  padding-top: 25px;
+  padding-left: 40px;
+  border: 0px solid;
+  border-radius: 12px;
+  padding-bottom: 35px;
+}
+
+.parentContact {
+  display: flex;
+  padding-left: 5%;
+  padding-right: 12%;
+  gap: 5%;
+}
+
+.submit {
+  width: 90%;
+  background-color: #F8FBFB;
+  margin-top: 35px;
+  padding-bottom: 15px;
+  border: 0px solid;
+  border-radius: 14px;
+  padding-left: 2%;
 }
 
 @media screen and (max-width: 767px) {
@@ -49,5 +81,86 @@
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
+  }
+
+  .email {
+    width: 100%;
+    background-color: rgb(232, 243, 248);
+    padding-top: 25px;
+    padding-left: 15px;
+    border: 0px solid;
+    border-radius: 12px;
+    padding-bottom: 35px;
+    margin-top: 14px;
+  }
+
+  .phone {
+    width: 100%;
+    height: 15%;
+    background-color: bisque;
+    padding-top: 25px;
+    padding-left: 40px;
+    border: 0px solid;
+    border-radius: 12px;
+    padding-bottom: 35px;
+  }
+
+  .submit {
+    width: 90%;
+    background-color: #F8FBFB;
+    margin-top: 35px;
+    padding-bottom: 15px;
+    border: 0px solid;
+    border-radius: 14px;
+    padding-left: 2%;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .parentContactDiv {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .email {
+    width: 100%;
+    background-color: rgb(232, 243, 248);
+    padding-top: 25px;
+    padding-left: 15px;
+    border: 0px solid;
+    border-radius: 12px;
+    padding-bottom: 35px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .phone {
+    width: 100%;
+    height: 15%;
+    background-color: bisque;
+    padding-top: 25px;
+    padding-left: 40px;
+    border: 0px solid;
+    border-radius: 12px;
+    padding-bottom: 35px;
+  }
+
+  .parentContact {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 12%;
+    gap: 5%;
+    flex-wrap: wrap;
+  }
+
+  .submit {
+    width: 90%;
+    background-color: #F8FBFB;
+    margin-top: 35px;
+    padding-bottom: 15px;
+    border: 0px solid;
+    border-radius: 14px;
+    padding-left: 2%;
   }
 }

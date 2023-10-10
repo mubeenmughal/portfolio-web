@@ -89,14 +89,15 @@ const ContactInfo = () => {
             </div>
           </div>
           <hr />
-          <img
-            width="160px"
-            height="45px"
-            className="cursor-pointer"
-            style={{ paddingBottom: '10px' }}
-            src={download} alt="download"
-            onClick={() => downloadResume()}
-          />
+          <div className="downloadResume">
+            <img
+              width="160px"
+              height="45px"
+              className="cursor-pointer"
+              src={download} alt="download"
+              onClick={() => downloadResume()}
+            />
+          </div>
         </div>
       </div>
     </div>
