@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <div className="header">
       {/* <img src={beatriceWambui} alt="beauty" /> */}
-      <h3>AF</h3>
+      <h3>MM</h3>
       {/* <img src={moon} alt="moon" /> */}
     </div>
   )

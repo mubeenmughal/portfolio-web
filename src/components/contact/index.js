@@ -29,12 +29,12 @@ const Contact = () => {
           <div className="phone">
             <img src={mobile} alt="mobile" />
             <span className="phone-email"><b>Phone:</b></span><br />
-            <span className="phone-number">+923030949729</span><br />
+            <span className="phone-number">+923114421235</span><br />
           </div>
           <div className="email">
             <img src={email} alt="email" />
             <span className="phone-email"><b>Email:</b></span><br />
-            <span className="phone-number">afaqahmadkhan499@gmail.com</span><br />
+            <span className="phone-number">mubeenmughal111@gmail.com</span><br />
           </div>
         </div>
         <div className="submit">
@@ -69,9 +69,9 @@ const Contact = () => {
           <button disabled={!from_name || !from_email || !message} className="submit-btn" onClick={async () => {
             setLoading(true);
             emailjs.send(
-              REACT_APP_SERVICE_ID,
-              REACT_APP_TEMPLATE_ID, {
-              to_name: 'Afaq Khan',
+              "service_tnc3647",
+              "template_dgh9xks", {
+              to_name: 'Mubeen Mughal',
               from_name,
               from_email,
               message
