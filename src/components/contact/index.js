@@ -69,8 +69,8 @@ const Contact = () => {
           <button disabled={!from_name || !from_email || !message} className="submit-btn" onClick={async () => {
             setLoading(true);
             emailjs.send(
-              "service_tnc3647",
-              "template_dgh9xks", {
+              REACT_APP_SERVICE_ID,
+              REACT_APP_TEMPLATE_ID, {
               to_name: 'Mubeen Mughal',
               from_name,
               from_email,
